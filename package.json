@@ -1,0 +1,76 @@
+{
+  "name": "geekbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js & npm run dev",
+    "dev": "webpack-dev-server --config ./webpack.config.js --hot --port 8881",
+    "test": "mocha --opts ./test/mocha.opts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dphaener/geekbook.git"
+  },
+  "keywords": [],
+  "author": "Darin Haener <dphaener@gmail.com> (https://github.com/dphaener)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dphaener/geekbook/issues"
+  },
+  "homepage": "https://github.com/dphaener/geekbook#readme",
+  "dependencies": {
+    "action-cable-react": "^0.1.1",
+    "babel": "6.3.26",
+    "babel-core": "6.4.0",
+    "babel-loader": "6.2.1",
+    "babel-plugin-module-alias": "1.1.0",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-react": "6.3.13",
+    "babel-preset-stage-0": "6.3.13",
+    "babel-relay-plugin": "^0.7.0",
+    "babel-relay-plugin-loader": "^0.7.0",
+    "bourbon": "^4.2.6",
+    "bourbon-neat": "^1.7.2",
+    "es6-actioncable": "0.0.1",
+    "immutable": "^3.7.6",
+    "jsonwebtoken": "^5.5.4",
+    "koa": "2.0.0-alpha.3",
+    "koa-convert": "1.2.0",
+    "koa-favicon": "1.2.0",
+    "normalize.css": "3.0.3",
+    "react": "0.14.6",
+    "react-dom": "0.14.6",
+    "react-gravatar": "^2.3.0",
+    "react-hot-loader": "1.3.0",
+    "react-list": "^0.7.13",
+    "react-redux": "^4.0.6",
+    "react-relay": "^0.7.0",
+    "react-router": "2.0.0-rc5",
+    "react-router-redux": "^2.1.0",
+    "react-router-relay": "^0.9.0",
+    "react-websocket": "^1.0.0",
+    "redux": "^3.0.6",
+    "webpack": "1.12.11",
+    "webpack-dev-server": "1.14.1",
+    "whatwg-fetch": "^0.11.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "chai": "^3.4.1",
+    "css-loader": "0.23.1",
+    "legit-tests": "1.0.0",
+    "mocha": "^2.3.4",
+    "mocha-babel": "^3.0.3",
+    "node-sass": "3.4.2",
+    "redux-devtools": "^3.0.1",
+    "sass-loader": "3.1.2",
+    "sinon": "^1.17.2",
+    "style-loader": "0.13.0"
+  },
+  "metadata": {
+    "graphql": {
+      "schema": "./data/schema.json"
+    }
+  }
+}
